@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DesignPatternMediatorExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for DesignPatternMediatorExample
+  pod 'AUIKit', :git => 'https://github.com/ihormyroniuk/AUIKit.git', :commit => '4d4f45334ba1c671754ac3c0f871ac70e487696f'
+end

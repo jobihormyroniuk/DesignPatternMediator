@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,13 @@
 		C5FEB28222EF0EAE001EC21D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FEB28022EF0EAE001EC21D /* Main.storyboard */; };
 		C5FEB28422EF0EAF001EC21D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FEB28322EF0EAF001EC21D /* Assets.xcassets */; };
 		C5FEB28722EF0EAF001EC21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FEB28522EF0EAF001EC21D /* LaunchScreen.storyboard */; };
+		EA248298F3204D70BBBBAF32 /* Pods_DesignPatternMediatorExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20565D6C3E7D3246E410008F /* Pods_DesignPatternMediatorExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20565D6C3E7D3246E410008F /* Pods_DesignPatternMediatorExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatternMediatorExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB39237D7BA22071D72D483D /* Pods-DesignPatternMediatorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternMediatorExample.debug.xcconfig"; path = "Target Support Files/Pods-DesignPatternMediatorExample/Pods-DesignPatternMediatorExample.debug.xcconfig"; sourceTree = "<group>"; };
+		C0EC0895D636697C820D7887 /* Pods-DesignPatternMediatorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternMediatorExample.release.xcconfig"; path = "Target Support Files/Pods-DesignPatternMediatorExample/Pods-DesignPatternMediatorExample.release.xcconfig"; sourceTree = "<group>"; };
 		C5FEB27922EF0EAE001EC21D /* DesignPatternMediatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternMediatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FEB27C22EF0EAE001EC21D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5FEB27E22EF0EAE001EC21D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA248298F3204D70BBBBAF32 /* Pods_DesignPatternMediatorExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A1D8805DE6FDBBBAF3DF1BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB39237D7BA22071D72D483D /* Pods-DesignPatternMediatorExample.debug.xcconfig */,
+				C0EC0895D636697C820D7887 /* Pods-DesignPatternMediatorExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		444ABFDE3602ADA0348F000E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20565D6C3E7D3246E410008F /* Pods_DesignPatternMediatorExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5FEB27022EF0EAE001EC21D = {
 			isa = PBXGroup;
 			children = (
 				C5FEB27B22EF0EAE001EC21D /* DesignPatternMediatorExample */,
 				C5FEB27A22EF0EAE001EC21D /* Products */,
+				3A1D8805DE6FDBBBAF3DF1BF /* Pods */,
+				444ABFDE3602ADA0348F000E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5FEB28B22EF0EAF001EC21D /* Build configuration list for PBXNativeTarget "DesignPatternMediatorExample" */;
 			buildPhases = (
+				F5FABF28129B816A9A8C9E34 /* [CP] Check Pods Manifest.lock */,
 				C5FEB27522EF0EAE001EC21D /* Sources */,
 				C5FEB27622EF0EAE001EC21D /* Frameworks */,
 				C5FEB27722EF0EAE001EC21D /* Resources */,
+				D0A61C5D213F5433B5F00F98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0A61C5D213F5433B5F00F98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesignPatternMediatorExample/Pods-DesignPatternMediatorExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesignPatternMediatorExample/Pods-DesignPatternMediatorExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesignPatternMediatorExample/Pods-DesignPatternMediatorExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5FABF28129B816A9A8C9E34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesignPatternMediatorExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5FEB27522EF0EAE001EC21D /* Sources */ = {
@@ -280,11 +348,13 @@
 		};
 		C5FEB28C22EF0EAF001EC21D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB39237D7BA22071D72D483D /* Pods-DesignPatternMediatorExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HRD7URR3P;
 				INFOPLIST_FILE = DesignPatternMediatorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +368,13 @@
 		};
 		C5FEB28D22EF0EAF001EC21D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0EC0895D636697C820D7887 /* Pods-DesignPatternMediatorExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HRD7URR3P;
 				INFOPLIST_FILE = DesignPatternMediatorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

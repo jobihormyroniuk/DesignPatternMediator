@@ -1,0 +1,22 @@
+PODS:
+  - AUIKit (0.1.2)
+
+DEPENDENCIES:
+  - AUIKit (from `https://github.com/ihormyroniuk/AUIKit.git`, commit `4d4f45334ba1c671754ac3c0f871ac70e487696f`)
+
+EXTERNAL SOURCES:
+  AUIKit:
+    :commit: 4d4f45334ba1c671754ac3c0f871ac70e487696f
+    :git: https://github.com/ihormyroniuk/AUIKit.git
+
+CHECKOUT OPTIONS:
+  AUIKit:
+    :commit: 4d4f45334ba1c671754ac3c0f871ac70e487696f
+    :git: https://github.com/ihormyroniuk/AUIKit.git
+
+SPEC CHECKSUMS:
+  AUIKit: ab21908129fc3587a10f14059b65ec4d528d9baf
+
+PODFILE CHECKSUM: ba867cf3556b25ddc4ddaf54c17de8f2efd8994a
+
+COCOAPODS: 1.7.5
