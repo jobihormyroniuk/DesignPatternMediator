@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5FEB27D22EF0EAE001EC21D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FEB27C22EF0EAE001EC21D /* AppDelegate.swift */; };
 		C5FEB27F22EF0EAE001EC21D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FEB27E22EF0EAE001EC21D /* ViewController.swift */; };
 		C5FEB28222EF0EAE001EC21D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FEB28022EF0EAE001EC21D /* Main.storyboard */; };
 		C5FEB28422EF0EAF001EC21D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FEB28322EF0EAF001EC21D /* Assets.xcassets */; };
 		C5FEB28722EF0EAF001EC21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FEB28522EF0EAF001EC21D /* LaunchScreen.storyboard */; };
+		C5FEB28F22EF1360001EC21D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FEB28E22EF1360001EC21D /* main.swift */; };
+		C5FEB29422EF13A0001EC21D /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FEB29322EF13A0001EC21D /* Application.swift */; };
 		EA248298F3204D70BBBBAF32 /* Pods_DesignPatternMediatorExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20565D6C3E7D3246E410008F /* Pods_DesignPatternMediatorExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +21,13 @@
 		AB39237D7BA22071D72D483D /* Pods-DesignPatternMediatorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternMediatorExample.debug.xcconfig"; path = "Target Support Files/Pods-DesignPatternMediatorExample/Pods-DesignPatternMediatorExample.debug.xcconfig"; sourceTree = "<group>"; };
 		C0EC0895D636697C820D7887 /* Pods-DesignPatternMediatorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternMediatorExample.release.xcconfig"; path = "Target Support Files/Pods-DesignPatternMediatorExample/Pods-DesignPatternMediatorExample.release.xcconfig"; sourceTree = "<group>"; };
 		C5FEB27922EF0EAE001EC21D /* DesignPatternMediatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternMediatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5FEB27C22EF0EAE001EC21D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5FEB27E22EF0EAE001EC21D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5FEB28122EF0EAE001EC21D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5FEB28322EF0EAF001EC21D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5FEB28622EF0EAF001EC21D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5FEB28822EF0EAF001EC21D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FEB28E22EF1360001EC21D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C5FEB29322EF13A0001EC21D /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +80,13 @@
 		C5FEB27B22EF0EAE001EC21D /* DesignPatternMediatorExample */ = {
 			isa = PBXGroup;
 			children = (
-				C5FEB27C22EF0EAE001EC21D /* AppDelegate.swift */,
+				C5FEB29322EF13A0001EC21D /* Application.swift */,
+				C5FEB28E22EF1360001EC21D /* main.swift */,
+				C5FEB28822EF0EAF001EC21D /* Info.plist */,
 				C5FEB27E22EF0EAE001EC21D /* ViewController.swift */,
 				C5FEB28022EF0EAE001EC21D /* Main.storyboard */,
 				C5FEB28322EF0EAF001EC21D /* Assets.xcassets */,
 				C5FEB28522EF0EAF001EC21D /* LaunchScreen.storyboard */,
-				C5FEB28822EF0EAF001EC21D /* Info.plist */,
 			);
 			path = DesignPatternMediatorExample;
 			sourceTree = "<group>";
@@ -203,8 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FEB29422EF13A0001EC21D /* Application.swift in Sources */,
 				C5FEB27F22EF0EAE001EC21D /* ViewController.swift in Sources */,
-				C5FEB27D22EF0EAE001EC21D /* AppDelegate.swift in Sources */,
+				C5FEB28F22EF1360001EC21D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
